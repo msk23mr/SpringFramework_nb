@@ -11,9 +11,19 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Enter Your Name</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Enter Your Name</h1>
+
+        <spring:nestedPath path="name">
+            <form action="" method="POST">
+                Name:
+                <spring:bind path="value">
+                    <input type="text" name="$(status.expression)" value="$(status.value)">
+                </spring:bind>
+                    <input type="submit" value="OK">
+            </form>
+        </spring:nestedPath>
     </body>
 </html>
