@@ -4,6 +4,8 @@
     Author     : mori
 --%>
 
+<%@taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
