@@ -17,10 +17,10 @@ public class HelloController extends SimpleFormController {
         //Initialize controller properties here or 
         //in the Web Application Context
 
-        //setCommandClass(MyCommand.class);
-        //setCommandName("MyCommandName");
-        //setSuccessView("successView");
-        //setFormView("formView");
+        setCommandClass(Name.class);
+        setCommandName("name");
+        setSuccessView("helloView");
+        setFormView("nameView");
     }
     
     @Override
